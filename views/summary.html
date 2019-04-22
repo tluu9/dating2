@@ -26,8 +26,6 @@ Dating Website/ HTML Home page
             <!--table-->
             <div class="col-sm-6">
 
-                <div class="container">
-
                     <table class="table table-bordered">
                         <tbody>
 
@@ -61,20 +59,28 @@ Dating Website/ HTML Home page
                         </tr>
 
                         <tr>
-                            <td>Interests: {{$_SESSION['interest']}} </td>
+                            <td>Interests: {{implode($_SESSION['interest'])}} </td>
                         </tr>
 
                         </tbody>
                     </table>
-                </div>
 
             </div>
 
             <!--bio-->
             <div class="col-sm-6 sidenav">
-
+                <img class="center" src="images/avatar.png" width="300" height="300" alt="profile picture">
+                <center><h4>Biography</h4></center>
+               <center><p>{{$_SESSION['bio']}}</p></center>
             </div>
 
+        </div>
+
+        <!--button-->
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <button class="btn btn-primary bottomMargin">Contact Me!</button>
+            </div>
         </div>
     </div>
 
