@@ -1,0 +1,82 @@
+<!--
+Trang Luu
+20 Apil 2019
+Dating Website/ HTML Home page
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dating Website</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="styles/style.css">
+
+</head>
+<body>
+<h3>My Dating Website</h3>
+
+
+    <div class="container-fluid">
+        <div class="row content">
+
+            <!--table-->
+            <div class="col-sm-6">
+
+                <div class="container">
+
+                    <table class="table table-bordered">
+                        <tbody>
+
+                        <tr>
+                            <td>Name: {{$_SESSION['fname']}} {{$_SESSION['lname']}}</td>
+                        </tr>
+
+                        <tr>
+                            <td>Gender: {{$_SESSION['gender']}}</td>
+
+                        </tr>
+
+                        <tr>
+                            <td>Age: {{$_SESSION['age']}}</td>
+                        </tr>
+
+                        <tr>
+                            <td>Phone: {{$_SESSION['phone']}}</td>
+                        </tr>
+
+                        <tr>
+                            <td>Email: {{$_SESSION['email']}}</td>
+                        </tr>
+
+                        <tr>
+                            <td>State: {{$_SESSION['state']}}</td>
+                        </tr>
+
+                        <tr>
+                            <td>Seeking: {{$_SESSION['seeking']}}</td>
+                        </tr>
+
+                        <tr>
+                            <td>Interests: {{$_SESSION['interest']}} </td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+            <!--bio-->
+            <div class="col-sm-6 sidenav">
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
