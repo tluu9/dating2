@@ -32,38 +32,54 @@ Dating Website/ HTML Home page
                 <div class="col-sm-3">
 
                     <div class="checkbox">
-                        <label><input type="checkbox" value="TV" name="interest[]">TV</label>
+                        <label><input type="checkbox" value="TV" name="indoor[]" checked>
+                            <check if="{{@indoor === 'TV'}}">checked</check>
+                            TV</label>
                     </div>
                     <div class="checkbox">
-                        <label><input type="checkbox" value="Puzzles" name="interest[]">Puzzles</label>
+                        <label><input type="checkbox" value="Puzzles" name="indoor[]">
+                            <check if="{{@indoor === 'Puzzles'}}">checked</check>
+                            Puzzles</label>
                     </div>
                 </div>
 
 
                 <div class="col-sm-3">
                     <div class="checkbox">
-                        <label><input type="checkbox" value="Movies" name="interest[]">Movies</label>
+                        <label><input type="checkbox" value="Movies" name="indoor[]">
+                            <check if="{{@indoor === 'Movies'}}">checked</check>
+                            Movies</label>
                     </div>
                     <div class="checkbox">
-                        <label><input type="checkbox" value="Reading" name="interest[]">Reading</label>
+                        <label><input type="checkbox" value="Reading" name="indoor[]">
+                            <check if="{{@indoor === 'Reading'}}">checked</check>
+                            Reading</label>
                     </div>
                 </div>
 
                 <div class="col-sm-3">
                     <div class="checkbox">
-                        <label><input type="checkbox" value="Cooking" name="interest[]">Cooking</label>
+                        <label><input type="checkbox" value="Cooking" name="indoor[]">
+                            <check if="{{@indoor === 'Cooking'}}">checked</check>
+                            Cooking</label>
                     </div>
                     <div class="checkbox">
-                        <label><input type="checkbox" value="Playing Cards" name="interest[]">Playing Cards</label>
+                        <label><input type="checkbox" value="Playing Cards" name="indoor[]">
+                            <check if="{{@indoor === 'Playing Cards'}}">checked</check>
+                            Playing Cards</label>
                     </div>
                 </div>
 
                 <div class="col-sm-3 sidenav">
                     <div class="checkbox">
-                        <label><input type="checkbox" value="Board games" name="interest[]">Board games</label>
+                        <label><input type="checkbox" value="Board games" name="indoor[]">
+                            <check if="{{@indoor === 'Board games'}}">checked</check>
+                            Board games</label>
                     </div>
                     <div class="checkbox">
-                        <label><input type="checkbox" value="Video games" name="interest[]">Video games</label>
+                        <label><input type="checkbox" value="Video games" name="indoor[]">
+                            <check if="{{@indoor === 'Video games'}}">checked</check>
+                            Video games</label>
                     </div>
                 </div>
             </div>
@@ -76,33 +92,45 @@ Dating Website/ HTML Home page
 
                 <div class="col-sm-3">
                     <div class="checkbox">
-                        <label><input type="checkbox" value="Hiking" name="interest[]">Hiking</label>
+                        <label><input type="checkbox" value="Hiking" name="outdoor[]" checked>
+                            <check if="{{@outdoor === 'Hiking'}}">checked</check>
+                            Hiking</label>
                     </div>
                     <div class="checkbox">
-                        <label><input type="checkbox" value="Walking" name="interest[]">Walking</label>
+                        <label><input type="checkbox" value="Walking" name="outdoor[]">
+                            <check if="{{@outdoor === 'Walking'}}">checked</check>
+                            Walking</label>
                     </div>
                 </div>
 
 
                 <div class="col-sm-3">
                     <div class="checkbox">
-                        <label><input type="checkbox" value="Biking" name="interest[]">Biking</label>
+                        <label><input type="checkbox" value="Biking" name="outdoor[]">
+                            <check if="{{@outdoor === 'Biking'}}">checked</check>
+                            Biking</label>
                     </div>
                     <div class="checkbox">
-                        <label><input type="checkbox" value="Climbing" name="interest[]">Climbing</label>
+                        <label><input type="checkbox" value="Climbing" name="outdoor[]">
+                            <check if="{{@outdoor === 'Climbing'}}">checked</check>
+                            Climbing</label>
                     </div>
                 </div>
 
                 <div class="col-sm-3">
                     <div class="checkbox">
-                        <label><input type="checkbox" name="interest[]" value="Swimming">Swimming</label>
+                        <label><input type="checkbox" name="outdoor[]" value="Swimming">
+                            <check if="{{@outdoor === 'Swimming'}}">checked</check>
+                            Swimming</label>
                     </div>
 
                 </div>
 
-                <div class="col-sm-3 sidenav">
+                <div class="col-sm-3">
                     <div class="checkbox">
-                        <label><input type="checkbox" name="interest[]" value="Collecting">Collecting</label>
+                        <label><input type="checkbox" name="outdoor[]" value="Collecting">
+                            <check if="{{@outdoor === 'Collecting'}}">checked</check>
+                            Collecting</label>
                     </div>
 
                 </div>

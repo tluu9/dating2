@@ -30,28 +30,39 @@ Dating Website/ HTML Home page
                 <!--first name-->
                 <div class="form-group">
                     <label ><strong>First Name</strong></label>
-                    <input type="text" name="fname" class="form-control"  placeholder="Sarah">
+                    <input type="text" name="fname" value="{{@fname}}" class="form-control"  placeholder="Sarah">
+                    <check if="{{ @errors['first'] }}">
+                        <span class="err">{{ @errors['fname'] }}</span>
+                    </check>
                 </div>
 
                 <!--last name-->
                 <div class="form-group">
                     <label ><strong>Last Name</strong></label>
-                    <input type="text" name="lname"class="form-control"  placeholder="Smith">
+                    <input type="text" name="lname" value="{{@lname}}" class="form-control"  placeholder="Smith">
+                    <check if="{{ @errors['first'] }}">
+                        <span class="err">{{ @errors['lname'] }}</span>
+                    </check>
                 </div>
 
                 <!--age-->
                 <div class="form-group">
                     <label><strong>Age</strong></label>
-                    <input type="text" name="age" class="form-control"  placeholder="30">
+                    <input type="text" name="age" value="{{@age}}" class="form-control"  placeholder="30">
+                    <check if="{{ @errors['age'] }}">
+                        <span class="text-danger">{{ @errors['age'] }}</span>
+                    </check>
                 </div>
 
                 <!--gender-->
                 <div class="form-group">
                     <label><strong>Gender</strong></label>
                     <div class="radio">
-                        <label><input type="radio" name="gender" value="Male" checked>Male</label>
+                        <label><input type="radio" name="gender" value="Male" checked>
+                            <check if="{{@gender === 'Male'}}"></check> Male</label>
 
-                        <label><input type="radio" name="gender" value="Female" >Female</label>
+                        <label><input type="radio" name="gender" value="Female" >
+                            <check if="{{@gender === 'Female'}}"></check>Female</label>
                     </div>
                 </div>
 
@@ -59,6 +70,9 @@ Dating Website/ HTML Home page
                 <div class="form-group">
                     <label><strong>Phone Number</strong></label>
                     <input type="text" name="phone" class="form-control"  placeholder="222-333-4444">
+                    <check if="{{ @errors['phone'] }}">
+                        <span class="text-danger">{{ @errors['phone'] }}</span>
+                    </check>
                 </div>
 
 
